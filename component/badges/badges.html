@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="badges.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Badges</title>
+  </head>
+  <body>
+    <header>
+    <nav class="flex_space nav">
+      <div>
+        <h2><a href="../../index.html">Home</a></h2>
+      </div>
+      <div>
+        <span class="menulines pointer" onclick="openNav()">&#9776;</span>
+      </div>
+
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;
+        </a>
+
+        <a href="../avatar/avatar.html">Avatar</a>
+        <a href="../alert/alert.html">Alert</a>
+        <a href="../badges/badges.html">Badges</a>
+        <a href="../button/button.html">Button</a>
+        <a href="../card/card.html">Card</a>
+        <a href="../responsive-image/responsive-image.html">Responsive-Image</a>
+        <a href="../input/input.html">Input</a>
+        <a href="../list/list.html">List</a>
+        <a href="../toster/toast.html">Toast</a>
+        <a href="../other/other.html">Other Utilities</a>
+        <a href="../grid/responsive-grid.html">Grid</a>
+      </div>
+    </nav>
+  </header>
+
+    <!-- main -->
+    <main>
+    <div class="page">
+      <h1 class="heading">Badges</h1>
+      <p class="description"
+        >Copy the styles of different badges and use it in your code
+      </p>
+      <div>
+        <!-- Simple Badge -->
+        <h3>Normal Badge</h3>
+        <div class="flex_center">
+          <div class="badge_container">
+            <span class="badge badge-primary">Primay</span>
+
+            <span class="badge badge-secondary">Secondary</span>
+
+            <span class="badge badge-dark">Primary</span>
+
+            <!-- pill badge -->
+
+            <span class="badge badge-pill badge-success">Pill Badge</span>
+
+            <span class="badge badge-pill badge-warning">Pill Badge</span>
+
+            <!-- link badge -->
+
+            <a href="#" class="badge badge-link badge-primary">Link Badge</a>
+
+            <a href="#" class="badge badge-link badge-danger">Link Badge</a>
+          </div>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=55px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cspan%2520class%253D%2522badge%2520badge-primary%2522%253EPrimay%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-secondary%2522%253ESecondary%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-dark%2522%253EPrimary%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520pill%2520badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-pill%2520badge-success%2522%253EPill%2520Badge%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-pill%2520badge-warning%2522%253EPill%2520Badge%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520link%2520badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522badge%2520badge-link%2520badge-primary%2522%253ELink%2520Badge%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522badge%2520badge-link%2520badge-danger%2522%253ELink%2520Badge%253C%252Fa%253E"
+            style="
+              width: 100%;
+              height: 293px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Icon Badge || Notification Badge -->
+      <div>
+        <h3>Icons Badges</h3>
+        <div class="badge_container">
+          <div class="badge-box flex_center">
+            <div class="badge-container">
+              <i class="fas fa-user-friends fa-2x"></i>
+              <div class="badge-notification flex_center badge-primary">5+</div>
+            </div>
+            <div class="badge-container">
+              <i class="fas fa-phone-alt fa-2x"></i>
+              <div class="badge-notification flex_center">10+</div>
+            </div>
+            <div class="badge-container">
+              <i class="fab fa-whatsapp fa-2x"></i>
+              <div class="badge-notification flex_center badge-danger">5</div>
+            </div>
+            <!-- avatar badge -->
+            <div class="badge-container">
+              <img class="avatar-img sm" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+              <div class="badge  avatar-badge">19</div>
+           </div>
+          
+        </div>
+       
+      </div>
+      <div class="code-container">
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=55px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-user-friends%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-notification%2520flex_center%2520badge-primary%2522%253E5%252B%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-phone-alt%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-notification%2520flex_center%2522%253E10%252B%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%250A%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-whatsapp%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-notification%2520flex_center%2520badge-danger%2522%253E5%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%250A%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520sm%2522%2520src%253D%2522src%2520link%2522%2520alt%2520%2520%253D%2520%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520%2520avatar-badge%2522%253E19%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
+        style="width: 100%; height: 463px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </div>
+      </div>
+ 
+    </main>
+
+    <script src="../../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+.badge_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid lightgray;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.badge {
+  padding: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.badge-primary {
+  background-color: var(--primary);
+  color: var(--text);
+}
+.badge-secondary {
+  border: 1px solid var(--dark);
+}
+.badge-dark {
+  background-color: var(--dark);
+  color: var(--text);
+}
+.badge-warning {
+  background-color: var(--warning);
+  color: var(--text);
+}
+.badge-danger {
+  background-color: var(--danger);
+  color: var(--text);
+}
+.badge-success {
+  background-color: var(--success);
+  color: var(--text);
+}
+.badge-pill {
+  border-radius: 10px;
+}
+.badge-link {
+  text-decoration: none;
+  border-radius: 10px;
+}
+.badge-link:hover {
+  color: var(--dark);
+}
+
+.badge-container {
+  display: flex;
+  position: relative;
+  width: 5rem;
+  flex-direction: row;
+  cursor: pointer;
+}
+.icon-badge-container {
+  margin-top: 1rem;
+}
+.badge-container i {
+  font-size: 1.5rem;
+}
+
+.badge-notification {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  font-size: x-small;
+  color: var(--dark);
+}
+.avatar-img {
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--dark);
+}
+.avatar-badge {
+  position: absolute;
+  top: -5px;
+  left: 35px;
+  background: var(--primary);
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  align-items: center;
+  font-size: x-small;
+  color: var(--dark);
+}
