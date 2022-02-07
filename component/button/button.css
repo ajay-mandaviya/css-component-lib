@@ -1,0 +1,112 @@
+.btn-container {
+  width: 90%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 1px solid lightgray;
+  padding: 1rem;
+}
+.btn {
+  padding: 0.6rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-primary {
+  border: none;
+  background: var(--primary-dark);
+  color: var(--text);
+}
+
+.btn-secondary {
+  border: none;
+  color: var(--text);
+  background: slategray;
+}
+
+.btn-success {
+  border: none;
+  color: var(--text);
+  background: var(--success-dark);
+}
+
+.btn-danger {
+  border: none;
+  color: var(--text);
+  background: var(--danger-dark);
+}
+
+.btn-warning {
+  border: none;
+  color: var(--text);
+  background: var(--warning-dark);
+}
+
+.btn-info {
+  border: none;
+  color: var(--text);
+  background: var(--info-dark);
+}
+
+.btn-dark {
+  border: none;
+  color: var(--text);
+  background: var(--dark);
+}
+.link {
+  background: transparent;
+  font-size: 1.2rem;
+}
+.link-primary {
+  border: 1px solid var(--primary-dark);
+  color: var(--primary-dark);
+}
+.link-secondary {
+  color: var(--dark);
+  border: none;
+  text-decoration: underline;
+}
+.social-btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--dark);
+  box-shadow: var(--btn-shadow);
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-linkedin {
+  color: #2867b2;
+}
+.fa-github {
+  color: #333;
+}
+.fa-instagram {
+  color: #e1306c;
+}
+.icon-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.action-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--btn-shadow);
+  cursor: pointer;
+}
+.action-button:hover {
+  border: none;
+}

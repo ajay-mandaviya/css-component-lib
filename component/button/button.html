@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Buttons</title>
+  </head>
+  <body>
+    <nav class="flex_space nav">
+      <div>
+        <h2><a href="../../index.html">Home</a></h2>
+      </div>
+      <div>
+        <span class="menulines pointer" onclick="openNav()">&#9776;</span>
+      </div>
+
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;
+        </a>
+
+        <a href="../avatar/avatar.html">Avatar</a>
+        <a href="../alert/alert.html">Alert</a>
+        <a href="../badges/badges.html">Badges</a>
+        <a href="../button/button.html">Button</a>
+        <a href="../card/card.html">Card</a>
+        <a href="../responsive-image/responsive-image.html">Responsive-Image</a>
+        <a href="../input/input.html">Input</a>
+        <a href="../list/list.html">List</a>
+        <a href="../toster/toast.html">Toast</a>
+        <a href="../other/other.html">Other Utilities</a>
+        <a href="../grid/responsive-grid.html">Grid</a>
+        <a href=""></a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="page">
+        <h1 class="heading">Button</h1>
+        <p class="description">
+          Copy the styles of different badges and use it in your code
+        </p>
+        <p class="description">Use Button to take user action.</p>
+        <!-- Normal btn -->
+        <div>
+          <h3>Simple Button</h3>
+          <div class="flex_center">
+            <div class="btn-container">
+              <div>
+                <button class="btn btn-primary">Primary</button>
+              </div>
+              <div>
+                <button class="btn btn-secondary">Secondary</button>
+              </div>
+              <div>
+                <button class="btn btn-success">Success</button>
+              </div>
+              <div>
+                <button class="btn btn-danger">Danger</button>
+              </div>
+              <div>
+                <button class="btn btn-warning">Warning</button>
+              </div>
+              <div>
+                <button class="btn btn-info">Info</button>
+              </div>
+              <div>
+                <button class="btn btn-dark">Dark</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=55px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%2520%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%2520%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-info%2522%253EInfo%253C%252Fbutton%253E%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-dark%2522%253EDark%253C%252Fbutton%253E"
+              style="
+                width: 100%;
+                height: 208px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- button with inputs and link -->
+        <div>
+          <h3>Input and Link Button</h3>
+          <div class="flex_center">
+            <div class="btn-container">
+              <a class="btn btn-primary" href="#">Link</a>
+              <input class="btn btn-primary" type="button" value="Input" />
+              <input class="btn btn-primary" type="submit" value="Submit" />
+              <button class="btn link link-primary">Primary Link</button>
+              <button class="btn link link-secondary">Secondary Link</button>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2509%2509%253Ca%2520class%253D%2522btn%2520btn-primary%2522%2520href%253D%2522%2523%2522%253ELink%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522button%2522%2520value%253D%2522Input%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522submit%2522%2520value%253D%2522Submit%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520link%2520link-primary%2522%253EPrimary%2520Link%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520link%2520link-secondary%2522%253ESecondary%2520Link%253C%252Fbutton%253E%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 165px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- social media button -->
+        <div>
+          <h3>Social Buttons</h3>
+          <div class="flext_center">
+            <div class="btn-container socials mb">
+              <a href="https://twitter.com/AjayMandaviya" class="social-btn">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/ajay-mandaviya-222900191/"
+                class="social-btn"
+              >
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+
+              <a href="https://github.com/ajay-mandaviya" class="social-btn">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=55px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522https%253A%252F%252Ftwitter.com%252FAjayMandaviya%2522%2520class%253D%2522social-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-twitter%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522https%253A%252F%252Fwww.linkedin.com%252Fin%252Fajay-mandaviya-222900191%252F%2522class%253D%2522social-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-linkedin%2520fa-2x%2522%253E%253C%252Fi%253E%250A%253C%252Fa%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%250A%253Ca%2520href%253D%2522https%253A%252F%252Fgithub.com%252Fajay-mandaviya%2522%2520class%253D%2522social-btn%2522%253E%250A%2520%2509%2509%2509%2520%253Ci%2520class%253D%2522fab%2520fa-github%2520fa-2x%2522%253E%253C%252Fi%253E%250A%253C%252Fa%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%2520%253Ca%2520href%253D%2522https%253A%252F%252Fwww.instagram.com%2522%2520target%253D%2522_blank%2522%2520class%253D%2522social-btn%2522%2520%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-instagram%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%253C%252Fa%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 399px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- icon button -->
+        <div>
+          <h3>Button with Icon and Only Icon Button</h3>
+          <div class="flex_center">
+            <div class="btn-container">
+              <button class="btn">
+                <i class="fab fa-instagram fa-1x"></i>
+                Instagram
+              </button>
+              <button class="btn">
+                <i class="fas fa-cog fa-1px"></i>
+                Setting
+              </button>
+              <button class="btn">
+                <i class="far fa-edit fa-1px"></i>
+                Edit
+              </button>
+              <button class="icon-button">
+                <i class="fas fa-window-close fa-2px"></i>
+              </button>
+              <button class="icon-button">
+                <i class="fas fa-shopping-cart fa-2px"></i>
+              </button>
+              <button class="icon-button">
+                <i class="fas fa-share-alt fa-2px"></i>
+              </button>
+              <button class="icon-button">
+                <i class="far fa-trash-alt fa-2px"></i>
+              </button>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2522%253E%253Ci%2520class%253D%2522fab%2520fa-instagram%2520fa-1x%2522%253E%253C%252Fi%253EInstagram%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-cog%2520fa-1px%2522%253E%253C%252Fi%253ESetting%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cbutton%2520class%253D%2522btn%2522%253E%2520%253Ci%2520class%253D%2522far%2520fa-edit%2520fa-1px%2522%253E%253C%252Fi%253EEdit%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%21--%2520only%2520icon%2520--%253E%250A%250A%253Cbutton%2520class%253D%2522icon-button%2522%253E%253Ci%2520class%253D%2522fas%2520fa-window-close%2520fa-2px%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%253Cbutton%2520class%253D%2522icon-button%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520fa-2px%2522%253E%253C%252Fi%253E%2520%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%253Cbutton%2520class%253D%2522icon-button%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2520fa-2px%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522icon-button%2522%253E%253Ci%2520class%253D%2522far%2520fa-trash-alt%2520fa-2px%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 399px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- floating action buttons -->
+        <div>
+          <h3>Action button</h3>
+          <div class="flext_center">
+            <div class="btn-container socials mb">
+              <button class="action-button">
+                <i class="fas fa-plus"></i>
+              </button>
+              <button class="action-button">
+                <i class="fas fa-play"></i>
+              </button>
+              <button class="action-button">
+                <i class="fas fa-search"></i>
+              </button>
+              <button class="action-button">
+                <i class="fas fa-chevron-circle-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522action-button%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%2520%250A%250A%2520%253Cbutton%2520class%253D%2522action-button%2522%253E%253Ci%2520class%253D%2522fas%2520fa-play%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522action-button%2522%253E%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522action-button%2522%253E%253Ci%2520class%253D%2522fas%2520fa-chevron-circle-down%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E"
+              style="
+                width: 100%;
+                height: 208px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../../script.js"></script>
+  </body>
+</html>
