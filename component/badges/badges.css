@@ -50,7 +50,7 @@
 .badge-container {
   display: flex;
   position: relative;
-  width: 100px;
+  width: 5rem;
   flex-direction: row;
   cursor: pointer;
 }
