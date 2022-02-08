@@ -1,0 +1,27 @@
+.toster {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 5px;
+  position: relative;
+}
+.toster div {
+  margin-right: 1rem;
+}
+.success-toster {
+  color: var(--text);
+  border: 2px solid var(--text);
+  background-color: var(--success-dark);
+}
+.error-toster {
+  color: var(--text);
+  border: 2px solid var(--text);
+  background: var(--danger-dark);
+}
+.close-btn {
+  position: absolute;
+  top: -1px;
+  right: 0;
+}

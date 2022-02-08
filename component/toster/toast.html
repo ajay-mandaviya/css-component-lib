@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./toast.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
+    <title>Toast</title>
+  </head>
+  <body>
+    <nav class="flex_space nav">
+      <div>
+        <h2><a href="../../index.html">Home</a></h2>
+      </div>
+      <div>
+        <span class="menulines pointer" onclick="openNav()">&#9776;</span>
+      </div>
+
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;
+        </a>
+
+        <a href="../avatar/avatar.html">Avatar</a>
+        <a href="../alert/alert.html">Alert</a>
+        <a href="../badges/badges.html">Badges</a>
+        <a href="../button/button.html">Button</a>
+        <a href="../card/card.html">Card</a>
+        <a href="../responsive-image/responsive-image.html">Responsive-Image</a>
+        <a href="../input/input.html">Input</a>
+        <a href="../list/list.html">List</a>
+        <a href="./toast.html">Toast</a>
+        <a href="../grid/responsive-grid.html">Grid</a>
+        <a href="../other/other.html">Other Utilities</a>
+      </div>
+    </nav>
+    <!--  -->
+    <main>
+      <div class="page">
+        <h1 class="heading">Toast</h1>
+        <p class="description">
+          allows you to add notifications to your app
+        </p>
+        <div>
+          <div class="flex_center">
+            <div>
+              <div class="toster success-toster">
+                <div><i class="fa fa-check-circle"></i></div>
+                <span>Item Added SuccessFully</span>
+                <i class="fas fa-window-close close-btn"></i>
+              </div>
+              <div class="toster success-toster">
+                <div><i class="fa fa-check-circle"></i></div>
+                <span>Login Success Full</span>
+                <i class="fas fa-window-close close-btn"></i>
+              </div>
+              <div class="toster error-toster">
+                <div><i class="fa fa-exclamation-triangle"></i></i></div>
+                <span>Login Fail</span>
+                <i class="fas fa-window-close close-btn"></i>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522toster%2520success-toster%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253Ci%2520class%253D%2522fa%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EItem%2520Added%2520SuccessFully%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-window-close%2520close-btn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toster%2520success-toster%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253Ci%2520class%253D%2522fa%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELogin%2520Success%2520Full%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-window-close%2520close-btn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toster%2520error-toster%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253Ci%2520class%253D%2522fa%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELogin%2520Fail%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-window-close%2520close-btn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="width: 100%; height: 378px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../../script.js"></script>
+  </body>
+</html>
