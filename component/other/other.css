@@ -1,0 +1,14 @@
+.text-div {
+  padding: 0.5rem;
+  border: 2px solid var(--dark);
+  margin: 0.5rem 0.5rem;
+}
+.small-text {
+  font-size: 0.75rem;
+}
+.grey-text {
+  color: grey;
+}
+.center-text {
+  text-align: center;
+}
