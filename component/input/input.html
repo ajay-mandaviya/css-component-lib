@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="input.css" />
+
+    <title>Input</title>
+  </head>
+  <nav class="flex_space nav">
+    <div>
+      <h2><a href="../../index.html">Home</a></h2>
+    </div>
+    <div>
+      <span class="menulines pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <div class="sidenav" id="mySidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        &times;
+      </a>
+
+      <a href="../avatar/avatar.html">Avatar</a>
+      <a href="../alert/alert.html">Alert</a>
+      <a href="../badges/badges.html">Badges</a>
+      <a href="../button/button.html">Button</a>
+      <a href="../card/card.html">Card</a>
+      <a href="../responsive-image/responsive-image.html">Responsive-Image</a>
+      <a href="./input.html">Input</a>
+      <a href="../list/list.html">List</a>
+      <a href="../toster/toast.html">Toast</a>
+      <a href="../grid/responsive-grid.html">Grid</a>
+      <a href="../other/other.html">Other Utilities</a>
+    </div>
+  </nav>
+  <body>
+    <main>
+      <div class="page">
+        <h1 class="heading">Input Field</h1>
+        <p class="description">Input fieldset</p>
+        <div>
+          <div class="flex_center">
+            <!-- Normal Input -->
+            <div>
+              <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your Name"
+                  id="nameInput"
+                />
+              </div>
+              <div class="form-group">
+                <label for="emailInput">Email</label>
+                <input
+                  type="text"
+                  placeholder="Enter your Email"
+                  id="emailInput"
+                />
+              </div>
+              <div class="form-group">
+                <label for="passwordInput">Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter your Password"
+                  id="passwordInput"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522nameInput%2522%253EName%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520Name%2522%2520id%253D%2522nameInput%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522emailInput%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520Email%2522%2520id%253D%2522emailInput%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522passwordInput%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520your%2520Password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522passwordInput%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                width: 100%;
+                height: 357px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- with err -->
+
+        <div>
+          <h2 class="heading">Input form with error</h2>
+          <span class="description">Input form with show diffrent error </span>
+          <div class="flex_center">
+            <div>
+              <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your Name"
+                  id="nameInput"
+                />
+                <small class="form-error">Name Must be 3 char long</small>
+              </div>
+              <div class="form-group">
+                <label for="emailInput">Email</label>
+                <input
+                  type="text"
+                  placeholder="Enter your Email"
+                  id="emailInput"
+                />
+                <small class="form-error">Enter a valid email</small>
+              </div>
+              <div class="form-group">
+                <label for="passwordInput">Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter your Password"
+                  id="passwordInput"
+                />
+                <small class="form-error"> Password is not match </small>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522nameInput%2522%253EName%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520your%2520Name%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522nameInput%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522form-error%2522%253EName%2520Must%2520be%25203%2520char%2520long%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522emailInput%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520your%2520Email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522emailInput%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522form-error%2522%253EEnter%2520a%2520valid%2520email%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522passwordInput%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520your%2520Password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522passwordInput%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522form-error%2522%253E%2520Password%2520is%2520not%2520match%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                width: 100%;
+                height: 633px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../../script.js"></script>
+  </body>
+</html>
