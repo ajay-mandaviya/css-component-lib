@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./other.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>More Component</title>
+  </head>
+  <body>
+    <nav class="flex_space nav">
+      <div>
+        <h2><a href="../../index.html">Home</a></h2>
+      </div>
+      <div>
+        <span class="menulines pointer" onclick="openNav()">&#9776;</span>
+      </div>
+
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;
+        </a>
+
+        <a href="../avatar/avatar.html">Avatar</a>
+        <a href="../alert/alert.html">Alert</a>
+        <a href="../badges/badges.html">Badges</a>
+        <a href="../button/button.html">Button</a>
+        <a href="../card/card.html">Card</a>
+        <a href="../responsive-image/responsive-image.html">Responsive-Image</a>
+        <a href="../input/input.html">Input</a>
+        <a href="../list/list.html">List</a>
+        <a href="../toster/toast.html">Toast</a>
+        <a href="../grid/responsive-grid.html">Grid</a>
+        <a href="./other.html">Other Utilities</a>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+      <div class="page">
+        <h1 class="heading">Other</h1>
+        <p class="description">
+          Copy the styles of different Component and use it in your code
+        </p>
+        <div>
+          <h2>Typography</h2>
+          <div>
+            <div class="text-div">
+              <h1 class="heading-text">Heading</h1>
+            </div>
+            <div class="text-div">
+              <div class="small-text">Small text</div>
+            </div>
+            <div class="text-div">
+              <div class="grey-text">Grey text</div>
+            </div>
+            <div class="text-div">
+              <div class="center-text">Centered Text</div>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Ch1%2520class%253D%2522heading-text%2522%253EHeading%253C%252Fh1%253E%2520%2520%2520%2520%250A%2520%2520%2520%253Cdiv%2520class%253D%2522small-text%2522%253ESmall%2520text%253C%252Fdiv%253E%2520%2520%250A%2520%2520%2520%253Cdiv%2520class%253D%2522grey-text%2522%253EGrey%2520text%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522center-text%2522%253ECentered%2520Text%253C%252Fdiv%253E%2520%2520"
+              style="
+                width: 100%;
+                height: 144px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- rating fillup start -->
+        <div>
+          <h2>Star Rating</h2>
+          <p class="description">Rating start with fill up</p>
+          <div class="flex_center">
+            <div class="rating">
+              <i class="fas fa-star fa-2x"></i>
+              <i class="fas fa-star fa-2x"></i>
+              <i class="fas fa-star fa-2x"></i>
+              <i class="fas fa-star fa-2x"></i>
+              <i class="far fa-star fa-2x"></i>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%2520%2520%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                width: 100%;
+                height: 208px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- with out fillup start -->
+        <div>
+          <h2>Star Rating</h2>
+          <p class="description">Rating start without fill up star </p>
+          <div class="flex_center">
+            <div class="rating">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="
+                width: 100%;
+                height: 208px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div>
+          <h2>Slider Range</h2>
+          <p class="description"
+            >Defines a control for entering a number whose exact value is not
+            important</p
+          >
+
+          <div class="flex_center">
+            <input type="range" min="1" max="1000" value="50" />
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522range%2522%2520min%253D%25221%2522%2520max%253D%25221000%2522%2520value%253D%252250%2522%2520%252F%253E"
+              style="
+                width: 100%;
+                height: 80px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../../script.js"></script>
+  </body>
+</html>
