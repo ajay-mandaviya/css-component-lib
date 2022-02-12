@@ -8,6 +8,7 @@
 @import url("./component/responsive-image/responsive-image.css");
 @import url("./component/toster/toast.css");
 @import url("./component/other/other.css");
+@import url("./component//grid/responsive-grid.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 :root {
   --bg-color: #0a1929;
