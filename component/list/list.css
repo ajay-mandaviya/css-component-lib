@@ -7,3 +7,29 @@
   padding: 1.25rem 0.75rem;
   border-bottom: 1px solid lightgray;
 }
+.stacked-list {
+  border: 2px solid lightgray;
+}
+.order-list-item {
+  padding: 1rem;
+  position: relative;
+  border-bottom: 2px solid lightgray;
+  cursor: pointer;
+}
+.order-list-item:hover {
+  background-color: rgba(230, 229, 227, 0.842);
+}
+.list-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: lightgray;
+  color: black;
+}
+.list-heading {
+  font-weight: bold;
+}
+.list-text {
+  letter-spacing: 1px;
+  font-weight: 400;
+}
