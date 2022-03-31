@@ -27,7 +27,9 @@
         <a href="../badges/badges.html">Badges</a>
         <a href="../button/button.html">Button</a>
         <a href="../card/card.html">Card</a>
-        <a href="./responsive-image.html">Responsive-Image</a>
+        <a class="page-active" href="./responsive-image.html"
+          >Responsive-Image</a
+        >
         <a href="../input/input.html">Input</a>
         <a href="../list/list.html">List</a>
         <a href="../toster/toast.html">Toast</a>
@@ -39,7 +41,10 @@
     <main>
       <div class="page">
         <h1 class="heading">Responsive-Image</h1>
-        <p class="description"> Image will fit on your container </p>
+        <p class="description">
+          Image will fit based  on your container width norml img-container with 15rem
+          and responsive-img make image fit into container
+        </p>
 
         <!--  -->
         <div>
@@ -68,28 +73,59 @@
           </div>
         </div>
 
-        <!--  -->
-
+        <!-- big img -->
         <div>
-          <h2>Round Image
-          </h2>
-          <div class="flex_center">
-            <div class="img-container">
-              <img
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
-                class="responsive-img round-img"
-              />
+          <h2>Responsive Image</h2>
+          <p class="description">
+              If you apply responsive-img class directly on image it make your image responsive
+          </p>
+          <div  class="flex_center">            
+            <img
+              src="https://picsum.photos/seed/picsum/500/500"
+              alt="responsive image"
+              class="responsive-img"
+            />
           </div>
-        </div>
+
           <div class="code-container">
             <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%2520%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522responsive-round-img%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
-            style="width: 100%; height: 208px; border:0; transform: scale(1); overflow:hidden;"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=736&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2509%2509%2509%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fseed%252Fpicsum%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522responsive-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E"
+            style="width: 100%; height: 152px; border:0; transform: scale(1); overflow:hidden;"
             sandbox="allow-scripts allow-same-origin">
           </iframe>
           </div>
-       
+        </div>
+
+        <!--  -->
+
+        <div>
+          <h2>Round Image</h2>
+          <p class="description">
+            Use round-img class to make image round.
+          </p>
+          <div class="flex_center">
+            <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+              class="responsive-img round-img"
+            />
+          </div>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=58px&dsblur=23px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%2520%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522responsive-round-img%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 208px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
       </div>
     </main>
 
