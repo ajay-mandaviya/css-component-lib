@@ -1,0 +1,41 @@
+.navbar {
+  background: #4285f4;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-logo {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 2rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+.navbar-hamburger {
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 750px) {
+  .navbar-hamburger {
+    display: block;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+  .navbar ul {
+    display: none;
+  }
+}
